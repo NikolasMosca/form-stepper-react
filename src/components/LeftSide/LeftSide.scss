@@ -1,0 +1,45 @@
+@import '../../parameters';
+
+.LeftSideContainer {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .Logo {
+        margin: 20px;
+    }
+
+    .HelpContainer {
+        width: 100%; 
+        padding: 20px;
+
+        .Dialog {
+            font-weight: bold;
+            background: white;
+            
+            padding: 20px;
+            border-radius: 20px 20px 20px 0px;
+
+            strong {
+                color: $main_background;
+            }
+        }
+
+        .Title {
+            padding: 10px 0px;
+            color: white;
+            font-weight: bold;
+            
+            display: flex;
+
+            div {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+    }
+}

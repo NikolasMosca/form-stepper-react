@@ -1,0 +1,22 @@
+@import '../../parameters';
+
+.ButtonContainer {
+    font-size: $button_font_size;
+    padding: 12px 45px;
+    margin: {
+        top: 20px;
+        right: 20px;
+    };
+    text-transform: uppercase;
+    border: 1px solid $main_color;
+    border-radius: $dots_size;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    color: $main_color;
+
+    &.white {
+        background: $main_color;
+        color: $main_background;
+    }
+}

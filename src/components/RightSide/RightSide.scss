@@ -1,0 +1,49 @@
+@import '../../parameters';
+
+.RightSideContainer {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .PaginationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 20px;
+
+        .PaginationItem {
+            width: $dots_size;
+            height: $dots_size;
+            margin: 8px;
+            background: $main_color;
+            border-radius: $dots_size;
+            opacity: $dots_opacity;
+            transition: 1s;
+
+            div {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: 2s;
+                filter: invert(40%);  
+            }
+
+            &.active {
+                width: 100px;
+                opacity: 1;
+            }
+
+            &.checked {
+                opacity: 1;
+                div {
+                    background: url(../../assets/images/check.png) center no-repeat;
+                    background-size: cover;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

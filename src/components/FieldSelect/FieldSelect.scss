@@ -1,0 +1,27 @@
+@import '../../parameters';
+
+.FieldSelectContainer {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $main_color;
+    padding: 10px;
+    margin: 20px 0px;
+    width: 100%;
+    font-size: 18px;
+    caret-color: $main_color;
+    color: $main_color;
+    opacity: 0.5;
+    transition: 0.5s;
+
+    option {
+        color: grey;
+    }
+
+    &::placeholder {
+        color: $main_color;
+        opacity: 0.9
+    }
+    &:focus {
+        opacity: 1;
+    }
+}
