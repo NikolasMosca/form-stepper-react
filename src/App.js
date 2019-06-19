@@ -176,6 +176,20 @@ class App extends Component {
                 })
               }}/>
               <Button text="Procedi" type="white" onClick={() => {
+
+                if(shopName.length === 0) {
+                  alert('Nome negozio non inserito');
+                  return;
+                }
+                if(discountType.length === 0) {
+                  alert('Tipologia sconto non inserito');
+                  return;
+                }
+                if(offerDescription.length === 0) {
+                  alert('Descrizione dell\'offerta non inserito');
+                  return;
+                }
+
                 this.setState({
                   page: page + 1
                 })
@@ -233,6 +247,32 @@ class App extends Component {
                 })
               }}/>
               <Button text="Procedi" type="white" onClick={() => {
+
+                if(name.length === 0) {
+                  alert('Nome non inserito');
+                  return;
+                }
+                if(surname.length === 0) {
+                  alert('Cognome non inserito');
+                  return;
+                }
+                if(telephone.length === 0) {
+                  alert('Numero di telefono non inserito');
+                  return;
+                }
+                if(email.length === 0) {
+                  alert('Indirizzo email non inserito');
+                  return;
+                }
+                if(howDidYouKnowUs.length === 0) {
+                  alert('Come ci hai conosciuto? non inserito');
+                  return;
+                }
+                if(!termsConfirmation) {
+                  alert('E\' necessario accettare i termini e le condizioni per proseguire');
+                  return;
+                }
+
                 this.setState({
                   page: page + 1
                 })
@@ -277,6 +317,12 @@ class App extends Component {
                 })
               }}/>
               <Button text="Paga ora" type="white" onClick={() => {
+
+                if(packageType.length === 0) {
+                  alert('Tipologia pacchetto non inserita');
+                  return;
+                }
+
                 this.setState({
                   page: page + 1
                 })
@@ -315,6 +361,24 @@ class App extends Component {
                 })
               }}/>
               <Button text="Termina" type="white" onClick={() => {
+
+                if(eInvoiceData1.length === 0) {
+                  alert('Dati fatturazione elettronica non inserito');
+                  return;
+                }
+                if(eInvoiceData2.length === 0) {
+                  alert('Dati fatturazione elettronica non inserito');
+                  return;
+                }
+                if(eInvoiceData3.length === 0) {
+                  alert('Dati fatturazione elettronica non inserito');
+                  return;
+                }
+                if(eInvoiceData4.length === 0) {
+                  alert('Dati fatturazione elettronica non inserito');
+                  return;
+                }
+
                 this.setState({
                   page: page + 1
                 })
