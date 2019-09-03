@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './FieldText.scss';
 
-class FieldText extends Component {
+class FieldText extends PureComponent {
     render() {
-        const { name, type } = this.props;
+        const { name } = this.props;
 
         return (
             <input 

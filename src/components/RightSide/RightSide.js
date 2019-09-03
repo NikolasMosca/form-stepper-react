@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './RightSide.scss';
 
-class RightSide extends Component {
+class RightSide extends PureComponent {
 
     //Set status 
-    setStatus(active, page) {
+    setStatus = (active, page) => {
         if(active === page) return 'active';
         if(active > page) return 'checked';
         return '';
     }
 
     //Create dot element with class active if the page correspond to the active page
-    renderDot(active, page) {
+    renderDot = (active, page) => {
         return <div key={page} className={ "PaginationItem " + this.setStatus(active, page) }>
             <div></div>
         </div>;
     }
 
     //Create dots
-    createDots(active, pages) {
+    createDots = (active, pages) => {
         let items = [];
         for(let page = 1; page <= pages; page++) {
             items.push(this.renderDot(active, page));

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './Slide.scss';
 
-class Slide extends Component {
+class Slide extends PureComponent {
 
     //Set Status for animation up and down 
-    setStatus(currentIndex, page) {
+    setStatus = (currentIndex, page) => {
         if(currentIndex === page) return 'show'; 
         if(currentIndex > page) return 'hide';
         return ''; 

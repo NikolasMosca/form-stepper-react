@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './FieldSelect.scss';
 
-class FieldSelect extends Component {
+class FieldSelect extends PureComponent {
 
-    createOptions(options) {
+    createOptions = (options) => {
         const { placeholder } = this.props;
         let items = [];
         items.push(<option key="empty" value="" disabled>{ placeholder }</option>);
-        options.map(({label, value}) => {
-            items.push(<option key={value} value={value}>{label}</option>);
-        });
+        options.map(({label, value}) => 
+            items.push(<option key={value} value={value}>{label}</option>)
+        );
         return items;
     }
 

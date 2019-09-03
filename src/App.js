@@ -46,22 +46,22 @@ class App extends Component {
     };
   }
 
-  createSlides(slides) {
+  createSlides = (slides) => {
     const { page, currentIndex = (page - 1) } = this.state;
     let items = [];
     slides.map((item, index) => {
       item.currentIndex = currentIndex;
       item.page = index;
-      items.push(this.createSlide(item))
+      return items.push(this.createSlide(item))
     })
     return items;
   }
 
-  createSlide(item) {
+  createSlide = (item) => {
     return <Slide key={item.page} {...item}/>;
   }
 
-  createFieldText(name, placholder, value) {
+  createFieldText = (name, placholder, value) => {
     return <FieldText 
       name={name} 
       placeholder={placholder} 
@@ -70,7 +70,7 @@ class App extends Component {
     />
   }
 
-  createFieldSelect(name, placholder, value, values) {
+  createFieldSelect = (name, placholder, value, values) => {
     return <FieldSelect 
       name={name} 
       placeholder={placholder}
@@ -80,11 +80,11 @@ class App extends Component {
     />
   }
 
-  findHelp(slides, index) {
+  findHelp = (slides, index) => {
     return (slides && slides[index] && typeof slides[index].help !== undefined) ? slides[index].help : false;
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   }
 
@@ -111,7 +111,6 @@ class App extends Component {
 
       packageType,
 
-      shopImage,
       shopDescription,
       eInvoiceData1,
       eInvoiceData2,
@@ -121,6 +120,7 @@ class App extends Component {
       emailFeedback,
       emailMessage
     } = this.state;
+
     const slides = [
 
       //SLide 1

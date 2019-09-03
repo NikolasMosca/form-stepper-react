@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import './LeftSide.scss';
-import Logo from '../../assets/images/logo_icon.svg';
+import Logo from '../../assets/images/logo.png';
 import QuestionMark from '../../assets/images/question_mark.png';
 
-class LeftSide extends Component {
+class LeftSide extends PureComponent {
     render() {
         const { help } = this.props;
         const title = "WeStudents";
