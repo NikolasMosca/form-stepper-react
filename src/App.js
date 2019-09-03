@@ -141,7 +141,7 @@ class App extends Component {
           <div>
             Per ricevere supporto o informazioni chiamaci al numero del nostro customer care 
             <br/>
-            <strong>+39 391 4809091</strong>
+            <strong>+XX XXX XXXXX</strong>
           </div>
         ),
         size: 'Huge'
