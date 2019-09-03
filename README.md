@@ -1,3 +1,13 @@
+# Form Stepper React
+
+Simple form stepper in pure React that permits to customize multiple steps with different content and custom validations and actions.
+
+This layout is not responsive and working only in Desktop view.
+
+## For see a demo just click this [link](https://adoring-kalam-8d7653.netlify.com)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
